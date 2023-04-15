@@ -3,11 +3,19 @@
       "target": "es5",
       "module": "commonjs",
       "jsx": "react",
-      "outDir": "./dist",
+      "baseUrl": ".",
+      "paths": {
+        "productivitytools.learning.typescript.npmpackage.button":["node_modules/productivitytools.learning.typescript.npmpackage.button/src"],
+        "productivitytools.learning.typescript.npmpackage.button/":["node_modules/productivitytools.learning.typescript.npmpackage.button/src/*"]
+      },
       "strict": true,
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "declaration": true
     },
     "include": [
-      "./src/**/*"
+      "./src/**/*",
+      "node_modules/productivitytools.learning.typescript.npmpackage.button/src/",
+      "node_modules/productivitytools.learning.typescript.npmpackage.button/src/*",
+      "node_modules/productivitytools.learning.typescript.npmpackage.button/src/**/*"
     ]
   }

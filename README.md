@@ -39,10 +39,18 @@ Add tsconfig.json
 }
 ```
 
+package.json
+```
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+```
+
 
 Without having the dependency already installed do 
 
-```npm link```
+```npm link productivitytools.learning.typescript.npmpackage.button```
 
 ![](Images/2023-04-14-06-56-41.png)
 
